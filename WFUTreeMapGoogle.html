@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>WFU Tree Map</title>
+
+</head>
+<body>
+
+<h2>WFU Tree Map</h2>
+
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("mapid"), mapOptions);
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqnFQzpL5OApdNsBmlfu2RDg1swXpbemc&callback=myMap"></script>
+
+</body>
+</html>
+
