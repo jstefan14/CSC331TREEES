@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- {{ title }} tells HJS to use variable title when
+  		rendering this page -->
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form action="/users/record" method="post">
+  		First name:<br>
+  		<input type="text" name="name" value="">
+  		<br>
+ 	 	Last name:<br>
+ 	 	<input type="text" name="lastname" value="">
+ 	 	<br><br>
+ 	 	<input type="submit" value="Submit">
+	</form>
+
+	<div>
+	<h1>Current List</h1>
+	 <ul>
+	 {{#users}}   <!-- Iterate over the array in users variable -->
+	 	<li>{{name}} {{lastname}}</li>  <!-- fields in the array entry -->
+	 {{/users}}	<!-- end of loop -->
+	</ul>
+	</div>
+
+  <div>
+    <a href="/">Back to main page</a>
+  </div>
+    <p></p>
+  </body>
+</html>

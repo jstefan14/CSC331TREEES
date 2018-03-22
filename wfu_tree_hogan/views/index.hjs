@@ -1,11 +1,23 @@
+<!--the user interface
+A templating language-->
+
 <!DOCTYPE html>
 <html>
   <head>
+  	<!-- {{ title }} tells HJS to use variable title when
+  		rendering this page -->
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+  	<h1>{{ title }}</h1>
+
+  	<!-- This can be turned into a menu easily -->
+  	<ul>
+  		<li> Home </li>
+      <li> <a href="/users/map"> View Map</li>
+  		<li> <a href="/users/addcharacter">Add Tree</a> </li> <!--add a link-->
+  	</ul>
+    <p></p>
   </body>
 </html>
