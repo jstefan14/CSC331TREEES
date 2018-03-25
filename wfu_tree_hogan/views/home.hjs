@@ -14,28 +14,24 @@
   </head>
 
 
-  <body style class>
+  <body>
 
     <div class="wrapper">
       <!-- <div id="map" style="width:500px; height:500px" ></div> -->
       <!-- top nav bar -->
-      <div class="navbar navbar-inverse navbar-fixed-top">  </div>
+      <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-collapse" id="otm-navbar-collapse">
           <ul class="pull-left nav navbar-nav navbar-left">
-            <li data-feature="add_plot">
-              <a data-action='addtree'
-                 data-always-enable='False'
-                 data-disabled-title='Adding trees is not available to all users'
-                 data-href="/users/addTree"
-                 disabled='disabled'>Add a Tree</a>
+            <li>
+              <a href="/users/addTree">Add a Tree</a>
             </li>
 
-            <li data-feature="home">
-              <a data-action='home'
-                 data-always-enable='True'
-                 data-href="/">Home</a>
+            <li>
+              <a href="/">Home</a>
             </li>
-
+          </ul>
+        </div>
+      </div>
       <!-- logo and search -->
       <div class="header">
         <div class="logo hidden-xs">
@@ -43,13 +39,10 @@
             src="image\WFULOGO.jpg" alt="WakeForestUniversity">
           </a >
         </div>
-
       </div>
       <!-- end of header -->
       <div class="subhead"></div>
       <div id="export-panel" class="modal fade"></div>
-
-
       <div class="content map">
         <div id="streetview" style="display: none"></div>
 
@@ -58,10 +51,6 @@
 
         <div class="sidebar">   </div><!--details and eco benefits-->
       </div>
-
-
-
-
     </div>
 
 
