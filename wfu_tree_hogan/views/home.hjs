@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.css" />
+    <link id="application-css" rel="stylesheet" href="http://ashevilletreemap.org/static/css/main.css" />
+    <link rel="stylesheet" href="http://ashevilletreemap.org/static/css/vendor.css" />
+    <!-- the css file is linked to other website, may change later -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
+    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+    <script src="http://matchingnotes.com/javascripts/leaflet-google.js"></script>
+  </head>
+
+
+  <body style class>
+
+    <div class="wrapper">
+      <!-- <div id="map" style="width:500px; height:500px" ></div> -->
+      <!-- top nav bar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">  </div>
+
+        <li> Home </li>
+        <li> <a href="/users/addTree">Add Tree</a> </li> <!--add a link-->
+
+      <!-- logo and search -->
+      <div class="header">
+        <div class="logo hidden-xs">
+          <a href=" ">< img id="site-logo"
+            src="image\WFULOGO.jpg" alt="WakeForestUniversity">
+          </a >
+        </div>
+
+      </div>
+      <!-- end of header -->
+      <div class="subhead"></div>
+      <div id="export-panel" class="modal fade"></div>
+
+      
+      <div class="content map">
+        <div id="streetview" style="display: none"></div>
+
+        <div id="map" class="map" data-has-boundaries = "False" data-has-polygons = "False">
+        </div>
+
+        <div class="sidebar">   </div><!--details and eco benefits-->
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script type='text/javascript'>
+      var map = new L.Map('map', {center: new L.LatLng(36.1352, -80.2763), zoom: 16});
+      var googleLayer = new L.Google('ROADMAP');
+      map.addLayer(googleLayer);
+    </script>
+  </body>
+
+
+</html>

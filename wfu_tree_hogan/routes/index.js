@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 	//when get(/), do function()
 	//YUQING: jin dao /(localhost:3000) zhe ge wang zhan
 	//Then the server gives back the information to the web browser
-	res.render('index',
+	res.render('home',
 		{title: "Wake Forest Tree Map"});
 });
 
