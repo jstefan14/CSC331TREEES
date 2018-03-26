@@ -27,7 +27,7 @@ function addTree(req, res, next) {
 	// par2 : data to be used when rendering the view
   res.render(
   	'addTree',
-  	{ title: 'Add Character',
+  	{ title: 'Add Tree',
   	  users: usersModel
   	}
   	);
