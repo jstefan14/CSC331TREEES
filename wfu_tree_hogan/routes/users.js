@@ -14,6 +14,8 @@ router.get('/addTree', addTree);
 // POST data from
 router.post('/record', record_data);
 
+// SEARCH function
+router.post('/search', search_tree);
 //
 // Functions responding to HTTP requests
 //
@@ -35,6 +37,11 @@ function record_data(req, res, next) {
 	console.log(req.body); // show in the console what the user entered
 	usersModel.push(req.body); // Add the user data to the users_data dataset
 	res.redirect('/users/addTree');	// reload the page
+}
+
+function search_tree(req, res, next) {
+	console.log(req.body);
+	res.redirect('/');	// reload the page
 }
 
 // Export the router, required in app.js

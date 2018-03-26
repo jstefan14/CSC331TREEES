@@ -29,23 +29,32 @@
     <div id="wrapper">
       <!-- <div id="map" style="width:500px; height:500px" ></div> -->
       <!-- top nav bar -->
-      <div id="navigation bar">
+      <div id="navigation bar" class="navbar">
         <div id="navigation bar buttons">
           <ul>
-            <li> <a href="/users/addTree">Add a Tree</a> </li>
             <li> <a href="/">Home</a> </li>
+            <li> <a href="/users/addTree">Add a Tree</a> </li>
           </ul>
         </div>
       </div>
+
       <!-- logo and search -->
-      <div id="logo and search">
-        <div id="logo">
+      <div id="logo and search" class="black_back">
+        <div class="logo" id="logo">
           <a href="/">
             <img id="site-logo" src="./image/WFU_logo.png" height=70px width=210px alt="WakeForestUniversity">
           </a >
         </div>
+        <div id = "search" class="search">
+          <form action="/users/search" method="post">
+            <input type="text" placeholder="Tree Name..." style="margin-top: 4px; float: right;">
+            <br>
+            <input type="submit" value="Search" style="margin-top: 4px; float: right;">
+          </form>
+        </div>
       </div>
-      <!-- end of header -->
+
+      <!-- sub header -->
       <div id="sub header"></div>
       <div id="export-panel" class="modal fade"></div>
 

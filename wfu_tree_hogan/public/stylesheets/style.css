@@ -8,27 +8,38 @@ body {
   height: calc( 90vh - 64px );
 }
 
-a {
+.navbar a {
   color: #00B7FF;
 }
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.black_back{
+  background-color: #000;
 }
-li {
-    float: left;
+.logo{
+  display: inline-block;
 }
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
+.search{
+  float: right;
+  margin-right: 32px;
+  display: inline-block;
 }
